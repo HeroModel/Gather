@@ -1,11 +1,6 @@
 {
   "images" : [
     {
-      "idiom" : "ios-marketing",
-      "size" : "1024x1024",
-      "scale" : "1x"
-    },
-    {
       "size" : "20x20",
       "idiom" : "iphone",
       "filename" : "兔兔iPhoneNotification_20pt@2x.png",
@@ -106,6 +101,12 @@
       "idiom" : "ipad",
       "filename" : "兔兔iPadProApp_83.5pt@2x.png",
       "scale" : "2x"
+    },
+    {
+      "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "兔兔.png",
+      "scale" : "1x"
     }
   ],
   "info" : {

@@ -14,6 +14,10 @@
 		189367A92068D39A007620CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189367A72068D39A007620CF /* LaunchScreen.storyboard */; };
 		189367AC2068D39A007620CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 189367AB2068D39A007620CF /* main.m */; };
 		189367B62068D39B007620CF /* GatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 189367B52068D39B007620CF /* GatherUITests.m */; };
+		18CF827E2069DC1D00236F08 /* GatherBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF827D2069DC1D00236F08 /* GatherBaseView.m */; };
+		18CF82812069DC3C00236F08 /* GatherBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF82802069DC3C00236F08 /* GatherBaseViewController.m */; };
+		BE5D2AAE548A587266B63989 /* libPods-GatherUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C4EFB96A019BDD94B154D /* libPods-GatherUITests.a */; };
+		E766DE88175FF7834D500D24 /* libPods-Gather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A80CCA4ACA27D50D127607 /* libPods-Gather.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,16 @@
 		189367B12068D39B007620CF /* GatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189367B52068D39B007620CF /* GatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherUITests.m; sourceTree = "<group>"; };
 		189367B72068D39B007620CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CF827C2069DC1D00236F08 /* GatherBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseView.h; sourceTree = "<group>"; };
+		18CF827D2069DC1D00236F08 /* GatherBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherBaseView.m; sourceTree = "<group>"; };
+		18CF827F2069DC3C00236F08 /* GatherBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseViewController.h; sourceTree = "<group>"; };
+		18CF82802069DC3C00236F08 /* GatherBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherBaseViewController.m; sourceTree = "<group>"; };
+		47A80CCA4ACA27D50D127607 /* libPods-Gather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66AA26D298B30234E2B3C3EE /* Pods-GatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GatherUITests/Pods-GatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		779C4EFB96A019BDD94B154D /* libPods-GatherUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GatherUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD2CE4B5E37486C75DABC65 /* Pods-Gather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gather/Pods-Gather.release.xcconfig"; sourceTree = "<group>"; };
+		EF5460021C1C8ED5D4E459CD /* Pods-GatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GatherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GatherUITests/Pods-GatherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F1302AC746893F1410C670EA /* Pods-Gather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gather/Pods-Gather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E766DE88175FF7834D500D24 /* libPods-Gather.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5D2AAE548A587266B63989 /* libPods-GatherUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +82,8 @@
 				1893679B2068D39A007620CF /* Gather */,
 				189367B42068D39B007620CF /* GatherUITests */,
 				1893679A2068D39A007620CF /* Products */,
+				41590C3CF56FF3AA55814804 /* Pods */,
+				6690934E0EB79D56D7D148D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,15 +99,10 @@
 		1893679B2068D39A007620CF /* Gather */ = {
 			isa = PBXGroup;
 			children = (
-				1893679C2068D39A007620CF /* AppDelegate.h */,
-				1893679D2068D39A007620CF /* AppDelegate.m */,
-				1893679F2068D39A007620CF /* ViewController.h */,
-				189367A02068D39A007620CF /* ViewController.m */,
-				189367A22068D39A007620CF /* Main.storyboard */,
-				189367A52068D39A007620CF /* Assets.xcassets */,
-				189367A72068D39A007620CF /* LaunchScreen.storyboard */,
-				189367AA2068D39A007620CF /* Info.plist */,
-				189367AB2068D39A007620CF /* main.m */,
+				18CF82742069DAEB00236F08 /* Main */,
+				18CF827A2069DB9600236F08 /* GatherThreePaty */,
+				18CF827B2069DB9700236F08 /* GatherTools */,
+				18CF82752069DB1500236F08 /* GatherBase */,
 			);
 			path = Gather;
 			sourceTree = "<group>";
@@ -103,6 +116,91 @@
 			path = GatherUITests;
 			sourceTree = "<group>";
 		};
+		18CF82742069DAEB00236F08 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1893679C2068D39A007620CF /* AppDelegate.h */,
+				1893679D2068D39A007620CF /* AppDelegate.m */,
+				1893679F2068D39A007620CF /* ViewController.h */,
+				189367A02068D39A007620CF /* ViewController.m */,
+				189367A22068D39A007620CF /* Main.storyboard */,
+				189367A52068D39A007620CF /* Assets.xcassets */,
+				189367A72068D39A007620CF /* LaunchScreen.storyboard */,
+				189367AA2068D39A007620CF /* Info.plist */,
+				189367AB2068D39A007620CF /* main.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		18CF82752069DB1500236F08 /* GatherBase */ = {
+			isa = PBXGroup;
+			children = (
+				18CF82772069DB5400236F08 /* GatherView */,
+				18CF82782069DB5400236F08 /* GatjerModel */,
+				18CF82792069DB5400236F08 /* GatherController */,
+			);
+			path = GatherBase;
+			sourceTree = "<group>";
+		};
+		18CF82772069DB5400236F08 /* GatherView */ = {
+			isa = PBXGroup;
+			children = (
+				18CF827C2069DC1D00236F08 /* GatherBaseView.h */,
+				18CF827D2069DC1D00236F08 /* GatherBaseView.m */,
+			);
+			path = GatherView;
+			sourceTree = "<group>";
+		};
+		18CF82782069DB5400236F08 /* GatjerModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GatjerModel;
+			sourceTree = "<group>";
+		};
+		18CF82792069DB5400236F08 /* GatherController */ = {
+			isa = PBXGroup;
+			children = (
+				18CF827F2069DC3C00236F08 /* GatherBaseViewController.h */,
+				18CF82802069DC3C00236F08 /* GatherBaseViewController.m */,
+			);
+			path = GatherController;
+			sourceTree = "<group>";
+		};
+		18CF827A2069DB9600236F08 /* GatherThreePaty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GatherThreePaty;
+			sourceTree = "<group>";
+		};
+		18CF827B2069DB9700236F08 /* GatherTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GatherTools;
+			sourceTree = "<group>";
+		};
+		41590C3CF56FF3AA55814804 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1302AC746893F1410C670EA /* Pods-Gather.debug.xcconfig */,
+				DBD2CE4B5E37486C75DABC65 /* Pods-Gather.release.xcconfig */,
+				66AA26D298B30234E2B3C3EE /* Pods-GatherUITests.debug.xcconfig */,
+				EF5460021C1C8ED5D4E459CD /* Pods-GatherUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6690934E0EB79D56D7D148D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47A80CCA4ACA27D50D127607 /* libPods-Gather.a */,
+				779C4EFB96A019BDD94B154D /* libPods-GatherUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 189367BA2068D39B007620CF /* Build configuration list for PBXNativeTarget "Gather" */;
 			buildPhases = (
+				8C098195DB83E37FED37041E /* [CP] Check Pods Manifest.lock */,
 				189367952068D39A007620CF /* Sources */,
 				189367962068D39A007620CF /* Frameworks */,
 				189367972068D39A007620CF /* Resources */,
+				DB3626F00580921035189F21 /* [CP] Embed Pods Frameworks */,
+				AA60C2F632B9550422E579A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 189367BD2068D39B007620CF /* Build configuration list for PBXNativeTarget "GatherUITests" */;
 			buildPhases = (
+				7F8E845FAA86560E37E0C07E /* [CP] Check Pods Manifest.lock */,
 				189367AD2068D39B007620CF /* Sources */,
 				189367AE2068D39B007620CF /* Frameworks */,
 				189367AF2068D39B007620CF /* Resources */,
+				9F0CF95CE6918C4EE12475E3 /* [CP] Embed Pods Frameworks */,
+				7D0047803CBF4DB324C03EE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,11 +304,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7D0047803CBF4DB324C03EE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GatherUITests/Pods-GatherUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F8E845FAA86560E37E0C07E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GatherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C098195DB83E37FED37041E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F0CF95CE6918C4EE12475E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GatherUITests/Pods-GatherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA60C2F632B9550422E579A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gather/Pods-Gather-resources.sh",
+				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gather/Pods-Gather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB3626F00580921035189F21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gather/Pods-Gather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		189367952068D39A007620CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CF827E2069DC1D00236F08 /* GatherBaseView.m in Sources */,
+				18CF82812069DC3C00236F08 /* GatherBaseViewController.m in Sources */,
 				189367A12068D39A007620CF /* ViewController.m in Sources */,
 				189367AC2068D39A007620CF /* main.m in Sources */,
 				1893679E2068D39A007620CF /* AppDelegate.m in Sources */,
@@ -355,6 +571,7 @@
 		};
 		189367BB2068D39B007620CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1302AC746893F1410C670EA /* Pods-Gather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -369,6 +586,7 @@
 		};
 		189367BC2068D39B007620CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD2CE4B5E37486C75DABC65 /* Pods-Gather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,6 +601,7 @@
 		};
 		189367BE2068D39B007620CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66AA26D298B30234E2B3C3EE /* Pods-GatherUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W484MABT73;
@@ -397,6 +616,7 @@
 		};
 		189367BF2068D39B007620CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF5460021C1C8ED5D4E459CD /* Pods-GatherUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W484MABT73;
