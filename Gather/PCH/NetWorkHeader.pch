@@ -1,0 +1,23 @@
+//
+//  NetWorkHeader.pch
+//  Gather
+//
+//  Created by apple on 2018/3/27.
+//  Copyright © 2018年 Apple. All rights reserved.
+//
+
+#ifndef NetWorkHeader_pch
+#define NetWorkHeader_pch
+
+// 输出日志 (格式: [时间] [哪个方法] [哪行] [输出内容])
+#ifdef DEBUG
+
+#define NSLog(format, ...)  printf("\n[%s] %s [第%zd行] 😆 %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String]);
+
+#else
+
+#define NSLog(format, ...)
+
+#endif
+
+#endif /* NetWorkHeader_pch */

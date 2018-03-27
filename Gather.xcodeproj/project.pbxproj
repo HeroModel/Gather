@@ -16,6 +16,7 @@
 		189367B62068D39B007620CF /* GatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 189367B52068D39B007620CF /* GatherUITests.m */; };
 		18CF827E2069DC1D00236F08 /* GatherBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF827D2069DC1D00236F08 /* GatherBaseView.m */; };
 		18CF82812069DC3C00236F08 /* GatherBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF82802069DC3C00236F08 /* GatherBaseViewController.m */; };
+		18CF828E2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF828D2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		BE5D2AAE548A587266B63989 /* libPods-GatherUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 779C4EFB96A019BDD94B154D /* libPods-GatherUITests.a */; };
 		E766DE88175FF7834D500D24 /* libPods-Gather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A80CCA4ACA27D50D127607 /* libPods-Gather.a */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,11 @@
 		18CF827D2069DC1D00236F08 /* GatherBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherBaseView.m; sourceTree = "<group>"; };
 		18CF827F2069DC3C00236F08 /* GatherBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseViewController.h; sourceTree = "<group>"; };
 		18CF82802069DC3C00236F08 /* GatherBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherBaseViewController.m; sourceTree = "<group>"; };
+		18CF82892069ED9900236F08 /* GatherAppHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherAppHeader.pch; sourceTree = "<group>"; };
+		18CF828A2069F28300236F08 /* NetWorkHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkHeader.pch; sourceTree = "<group>"; };
+		18CF828B2069F2AE00236F08 /* YWMacros.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWMacros.pch; sourceTree = "<group>"; };
+		18CF828C2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		18CF828D2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		47A80CCA4ACA27D50D127607 /* libPods-Gather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66AA26D298B30234E2B3C3EE /* Pods-GatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GatherUITests/Pods-GatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		779C4EFB96A019BDD94B154D /* libPods-GatherUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GatherUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				18CF82742069DAEB00236F08 /* Main */,
-				18CF827A2069DB9600236F08 /* GatherThreePaty */,
-				18CF827B2069DB9700236F08 /* GatherTools */,
+				18CF82822069E78700236F08 /* GatherThreePaty */,
+				18CF82832069E78700236F08 /* GatherTools */,
 				18CF82752069DB1500236F08 /* GatherBase */,
 			);
 			path = Gather;
@@ -128,6 +134,7 @@
 				189367A72068D39A007620CF /* LaunchScreen.storyboard */,
 				189367AA2068D39A007620CF /* Info.plist */,
 				189367AB2068D39A007620CF /* main.m */,
+				18CF82882069ED7600236F08 /* PCH */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -167,18 +174,38 @@
 			path = GatherController;
 			sourceTree = "<group>";
 		};
-		18CF827A2069DB9600236F08 /* GatherThreePaty */ = {
+		18CF82822069E78700236F08 /* GatherThreePaty */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = GatherThreePaty;
 			sourceTree = "<group>";
 		};
-		18CF827B2069DB9700236F08 /* GatherTools */ = {
+		18CF82832069E78700236F08 /* GatherTools */ = {
 			isa = PBXGroup;
 			children = (
+				18CF82842069E79900236F08 /* POP返回 */,
 			);
 			path = GatherTools;
+			sourceTree = "<group>";
+		};
+		18CF82842069E79900236F08 /* POP返回 */ = {
+			isa = PBXGroup;
+			children = (
+				18CF828C2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.h */,
+				18CF828D2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			name = "POP返回";
+			sourceTree = "<group>";
+		};
+		18CF82882069ED7600236F08 /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+				18CF82892069ED9900236F08 /* GatherAppHeader.pch */,
+				18CF828A2069F28300236F08 /* NetWorkHeader.pch */,
+				18CF828B2069F2AE00236F08 /* YWMacros.pch */,
+			);
+			path = PCH;
 			sourceTree = "<group>";
 		};
 		41590C3CF56FF3AA55814804 /* Pods */ = {
@@ -419,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CF828E2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				18CF827E2069DC1D00236F08 /* GatherBaseView.m in Sources */,
 				18CF82812069DC3C00236F08 /* GatherBaseViewController.m in Sources */,
 				189367A12068D39A007620CF /* ViewController.m in Sources */,
@@ -576,6 +604,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W484MABT73;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Gather/PCH/GatherAppHeader.pch";
 				INFOPLIST_FILE = Gather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youhu.net.Gather;
@@ -591,6 +620,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W484MABT73;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Gather/PCH/GatherAppHeader.pch";
 				INFOPLIST_FILE = Gather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youhu.net.Gather;

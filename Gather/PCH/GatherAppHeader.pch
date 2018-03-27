@@ -1,0 +1,40 @@
+//
+//  GatherAppHeader.pch
+//  Gather
+//
+//  Created by apple on 2018/3/27.
+//  Copyright © 2018年 Apple. All rights reserved.
+
+//  前期参与编译的头文件，切记：这里只能放置轻量常用的的头文件，比较大的头文件切勿放置于此，否则会导致debug模式下 编译时间过长。
+
+#ifndef GatherAppHeader_pch
+#define GatherAppHeader_pch
+
+
+
+/** 系统or第三方框架 */
+#import <AFNetworking.h>
+#import <MBProgressHUD.h>
+#import <WMPageController.h>
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+#import <YYWebImage.h>
+#import <Bugly/Bugly.h>//腾讯，异常上报
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <YYText/YYText.h>
+#import <YYWebImage/YYWebImage.h>
+#import <SDCycleScrollView.h>
+
+
+
+
+/// User Custom File
+#import "AppDelegate.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "NetWorkHeader.pch"
+#import "YWMacros.pch"
+
+
+#endif /* GatherAppHeader_pch */
