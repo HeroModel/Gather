@@ -142,9 +142,9 @@
 		18CF82752069DB1500236F08 /* GatherBase */ = {
 			isa = PBXGroup;
 			children = (
-				18CF82772069DB5400236F08 /* GatherView */,
-				18CF82782069DB5400236F08 /* GatjerModel */,
 				18CF82792069DB5400236F08 /* GatherController */,
+				18CF82772069DB5400236F08 /* GatherView */,
+				18CF828F2069F8EC00236F08 /* GatherModel */,
 			);
 			path = GatherBase;
 			sourceTree = "<group>";
@@ -156,13 +156,6 @@
 				18CF827D2069DC1D00236F08 /* GatherBaseView.m */,
 			);
 			path = GatherView;
-			sourceTree = "<group>";
-		};
-		18CF82782069DB5400236F08 /* GatjerModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GatjerModel;
 			sourceTree = "<group>";
 		};
 		18CF82792069DB5400236F08 /* GatherController */ = {
@@ -206,6 +199,13 @@
 				18CF828B2069F2AE00236F08 /* YWMacros.pch */,
 			);
 			path = PCH;
+			sourceTree = "<group>";
+		};
+		18CF828F2069F8EC00236F08 /* GatherModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GatherModel;
 			sourceTree = "<group>";
 		};
 		41590C3CF56FF3AA55814804 /* Pods */ = {
