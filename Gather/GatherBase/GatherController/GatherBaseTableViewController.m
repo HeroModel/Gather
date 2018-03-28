@@ -1,25 +1,40 @@
 //
-//  GatherBaseViewController.m
+//  GatherBaseTableViewController.m
 //  Gather
 //
-//  Created by apple on 2018/3/27.
+//  Created by apple on 2018/3/28.
 //  Copyright © 2018年 Apple. All rights reserved.
 //
 
-#import "GatherBaseViewController.h"
+#import "GatherBaseTableViewController.h"
 
-@interface GatherBaseViewController ()
+@interface GatherBaseTableViewController ()
 
 @end
 
-@implementation GatherBaseViewController
+@implementation GatherBaseTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.translucent = NO;
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    self.tableView.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = NO;
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"nav-icon-Return"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(didLeftBarButton:)];
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+#ifdef __IPHONE_11_0
+    if ([self.tableView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
+        if (@available(iOS 11.0, *)) {
+            self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+            self.tableView.estimatedRowHeight = 0;
+            self.tableView.estimatedSectionHeaderHeight = 0;
+            self.tableView.estimatedSectionFooterHeight = 0;
+        } else {
+            
+            
+        }
+    }
+#endif
 }
 - (void)didLeftBarButton:(UIBarButtonItem *)sender
 {
@@ -41,15 +56,5 @@
         
     }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

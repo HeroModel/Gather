@@ -1,25 +1,39 @@
 //
-//  GatherBaseViewController.m
+//  GatherBaseCollectionViewController.m
 //  Gather
 //
-//  Created by apple on 2018/3/27.
+//  Created by apple on 2018/3/28.
 //  Copyright © 2018年 Apple. All rights reserved.
 //
 
-#import "GatherBaseViewController.h"
+#import "GatherBaseCollectionViewController.h"
 
-@interface GatherBaseViewController ()
+@interface GatherBaseCollectionViewController ()
 
 @end
 
-@implementation GatherBaseViewController
+@implementation GatherBaseCollectionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = NO;
+    self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"nav-icon-Return"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(didLeftBarButton:)];
+    self.collectionView.indicatorStyle = UIScrollViewIndicatorStyleDefault;
+#ifdef __IPHONE_11_0
+    if ([self.collectionView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
+        if (@available(iOS 11.0, *)) {
+            self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//            self.collectionView.estimatedRowHeight = 0;
+//            self.collectionView.estimatedSectionHeaderHeight = 0;
+//            self.collectionView.estimatedSectionFooterHeight = 0;
+        } else {
+            
+            
+        }
+    }
+#endif
 }
 - (void)didLeftBarButton:(UIBarButtonItem *)sender
 {
@@ -41,15 +55,5 @@
         
     }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

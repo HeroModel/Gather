@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182522F9206B38350015FD97 /* GatherBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182522F8206B38350015FD97 /* GatherBaseTableViewController.m */; };
+		182522FC206B38510015FD97 /* GatherBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182522FB206B38510015FD97 /* GatherBaseCollectionViewController.m */; };
+		182522FF206B38880015FD97 /* GatherBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182522FE206B38880015FD97 /* GatherBaseTabBarController.m */; };
+		18252302206B393F0015FD97 /* GatherBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18252301206B393F0015FD97 /* GatherBarViewController.m */; };
+		1825230A206B3C010015FD97 /* BasisTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18252308206B3C010015FD97 /* BasisTableViewController.m */; };
+		1825230B206B3C010015FD97 /* BasisTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18252309206B3C010015FD97 /* BasisTableViewController.xib */; };
+		1825230F206B3C1F0015FD97 /* FristTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825230D206B3C1F0015FD97 /* FristTableViewController.m */; };
+		18252310206B3C1F0015FD97 /* FristTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1825230E206B3C1F0015FD97 /* FristTableViewController.xib */; };
+		18252314206B3C370015FD97 /* SecondTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18252312206B3C370015FD97 /* SecondTableViewController.m */; };
+		18252315206B3C370015FD97 /* SecondTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18252313206B3C370015FD97 /* SecondTableViewController.xib */; };
+		18252319206B3C4F0015FD97 /* ThirdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18252317206B3C4F0015FD97 /* ThirdTableViewController.m */; };
+		1825231A206B3C4F0015FD97 /* ThirdTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18252318206B3C4F0015FD97 /* ThirdTableViewController.xib */; };
+		1825231E206B3C6F0015FD97 /* FourthTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825231C206B3C6F0015FD97 /* FourthTableViewController.m */; };
+		1825231F206B3C6F0015FD97 /* FourthTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1825231D206B3C6F0015FD97 /* FourthTableViewController.xib */; };
 		1893679E2068D39A007620CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893679D2068D39A007620CF /* AppDelegate.m */; };
-		189367A12068D39A007620CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189367A02068D39A007620CF /* ViewController.m */; };
 		189367A42068D39A007620CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189367A22068D39A007620CF /* Main.storyboard */; };
 		189367A62068D39A007620CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189367A52068D39A007620CF /* Assets.xcassets */; };
 		189367A92068D39A007620CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189367A72068D39A007620CF /* LaunchScreen.storyboard */; };
@@ -32,11 +45,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182522F7206B38350015FD97 /* GatherBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseTableViewController.h; sourceTree = "<group>"; };
+		182522F8206B38350015FD97 /* GatherBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherBaseTableViewController.m; sourceTree = "<group>"; };
+		182522FA206B38510015FD97 /* GatherBaseCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseCollectionViewController.h; sourceTree = "<group>"; };
+		182522FB206B38510015FD97 /* GatherBaseCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherBaseCollectionViewController.m; sourceTree = "<group>"; };
+		182522FD206B38880015FD97 /* GatherBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseTabBarController.h; sourceTree = "<group>"; };
+		182522FE206B38880015FD97 /* GatherBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherBaseTabBarController.m; sourceTree = "<group>"; };
+		18252300206B393F0015FD97 /* GatherBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBarViewController.h; sourceTree = "<group>"; };
+		18252301206B393F0015FD97 /* GatherBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherBarViewController.m; sourceTree = "<group>"; };
+		18252307206B3C010015FD97 /* BasisTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasisTableViewController.h; sourceTree = "<group>"; };
+		18252308206B3C010015FD97 /* BasisTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasisTableViewController.m; sourceTree = "<group>"; };
+		18252309206B3C010015FD97 /* BasisTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasisTableViewController.xib; sourceTree = "<group>"; };
+		1825230C206B3C1F0015FD97 /* FristTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FristTableViewController.h; sourceTree = "<group>"; };
+		1825230D206B3C1F0015FD97 /* FristTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FristTableViewController.m; sourceTree = "<group>"; };
+		1825230E206B3C1F0015FD97 /* FristTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FristTableViewController.xib; sourceTree = "<group>"; };
+		18252311206B3C370015FD97 /* SecondTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondTableViewController.h; sourceTree = "<group>"; };
+		18252312206B3C370015FD97 /* SecondTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewController.m; sourceTree = "<group>"; };
+		18252313206B3C370015FD97 /* SecondTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewController.xib; sourceTree = "<group>"; };
+		18252316206B3C4F0015FD97 /* ThirdTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdTableViewController.h; sourceTree = "<group>"; };
+		18252317206B3C4F0015FD97 /* ThirdTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdTableViewController.m; sourceTree = "<group>"; };
+		18252318206B3C4F0015FD97 /* ThirdTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdTableViewController.xib; sourceTree = "<group>"; };
+		1825231B206B3C6F0015FD97 /* FourthTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthTableViewController.h; sourceTree = "<group>"; };
+		1825231C206B3C6F0015FD97 /* FourthTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthTableViewController.m; sourceTree = "<group>"; };
+		1825231D206B3C6F0015FD97 /* FourthTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthTableViewController.xib; sourceTree = "<group>"; };
 		189367992068D39A007620CF /* Gather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1893679C2068D39A007620CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1893679D2068D39A007620CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1893679F2068D39A007620CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		189367A02068D39A007620CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		189367A32068D39A007620CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		189367A52068D39A007620CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189367A82068D39A007620CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +116,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182522F5206B37590015FD97 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				182522F6206B378D0015FD97 /* TabBarController */,
+				18252303206B39720015FD97 /* C */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		182522F6206B378D0015FD97 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				18252300206B393F0015FD97 /* GatherBarViewController.h */,
+				18252301206B393F0015FD97 /* GatherBarViewController.m */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		18252303206B39720015FD97 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				18252307206B3C010015FD97 /* BasisTableViewController.h */,
+				18252308206B3C010015FD97 /* BasisTableViewController.m */,
+				18252309206B3C010015FD97 /* BasisTableViewController.xib */,
+				1825230C206B3C1F0015FD97 /* FristTableViewController.h */,
+				1825230D206B3C1F0015FD97 /* FristTableViewController.m */,
+				1825230E206B3C1F0015FD97 /* FristTableViewController.xib */,
+				18252311206B3C370015FD97 /* SecondTableViewController.h */,
+				18252312206B3C370015FD97 /* SecondTableViewController.m */,
+				18252313206B3C370015FD97 /* SecondTableViewController.xib */,
+				18252316206B3C4F0015FD97 /* ThirdTableViewController.h */,
+				18252317206B3C4F0015FD97 /* ThirdTableViewController.m */,
+				18252318206B3C4F0015FD97 /* ThirdTableViewController.xib */,
+				1825231B206B3C6F0015FD97 /* FourthTableViewController.h */,
+				1825231C206B3C6F0015FD97 /* FourthTableViewController.m */,
+				1825231D206B3C6F0015FD97 /* FourthTableViewController.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 		189367902068D39A007620CF = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +183,7 @@
 				18CF82822069E78700236F08 /* GatherThreePaty */,
 				18CF82832069E78700236F08 /* GatherTools */,
 				18CF82752069DB1500236F08 /* GatherBase */,
+				182522F5206B37590015FD97 /* Controller */,
 			);
 			path = Gather;
 			sourceTree = "<group>";
@@ -127,8 +202,6 @@
 			children = (
 				1893679C2068D39A007620CF /* AppDelegate.h */,
 				1893679D2068D39A007620CF /* AppDelegate.m */,
-				1893679F2068D39A007620CF /* ViewController.h */,
-				189367A02068D39A007620CF /* ViewController.m */,
 				189367A22068D39A007620CF /* Main.storyboard */,
 				189367A52068D39A007620CF /* Assets.xcassets */,
 				189367A72068D39A007620CF /* LaunchScreen.storyboard */,
@@ -163,6 +236,12 @@
 			children = (
 				18CF827F2069DC3C00236F08 /* GatherBaseViewController.h */,
 				18CF82802069DC3C00236F08 /* GatherBaseViewController.m */,
+				182522F7206B38350015FD97 /* GatherBaseTableViewController.h */,
+				182522F8206B38350015FD97 /* GatherBaseTableViewController.m */,
+				182522FA206B38510015FD97 /* GatherBaseCollectionViewController.h */,
+				182522FB206B38510015FD97 /* GatherBaseCollectionViewController.m */,
+				182522FD206B38880015FD97 /* GatherBaseTabBarController.h */,
+				182522FE206B38880015FD97 /* GatherBaseTabBarController.m */,
 			);
 			path = GatherController;
 			sourceTree = "<group>";
@@ -317,7 +396,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				189367A92068D39A007620CF /* LaunchScreen.storyboard in Resources */,
+				18252315206B3C370015FD97 /* SecondTableViewController.xib in Resources */,
 				189367A62068D39A007620CF /* Assets.xcassets in Resources */,
+				1825231A206B3C4F0015FD97 /* ThirdTableViewController.xib in Resources */,
+				1825230B206B3C010015FD97 /* BasisTableViewController.xib in Resources */,
+				1825231F206B3C6F0015FD97 /* FourthTableViewController.xib in Resources */,
+				18252310206B3C1F0015FD97 /* FristTableViewController.xib in Resources */,
 				189367A42068D39A007620CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,11 +530,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182522FC206B38510015FD97 /* GatherBaseCollectionViewController.m in Sources */,
 				18CF828E2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				182522F9206B38350015FD97 /* GatherBaseTableViewController.m in Sources */,
 				18CF827E2069DC1D00236F08 /* GatherBaseView.m in Sources */,
+				1825230A206B3C010015FD97 /* BasisTableViewController.m in Sources */,
+				18252314206B3C370015FD97 /* SecondTableViewController.m in Sources */,
+				18252319206B3C4F0015FD97 /* ThirdTableViewController.m in Sources */,
+				1825231E206B3C6F0015FD97 /* FourthTableViewController.m in Sources */,
 				18CF82812069DC3C00236F08 /* GatherBaseViewController.m in Sources */,
-				189367A12068D39A007620CF /* ViewController.m in Sources */,
+				18252302206B393F0015FD97 /* GatherBarViewController.m in Sources */,
 				189367AC2068D39A007620CF /* main.m in Sources */,
+				1825230F206B3C1F0015FD97 /* FristTableViewController.m in Sources */,
+				182522FF206B38880015FD97 /* GatherBaseTabBarController.m in Sources */,
 				1893679E2068D39A007620CF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
