@@ -26,7 +26,7 @@
 #import <YYText/YYText.h>
 #import <YYWebImage/YYWebImage.h>
 #import <SDCycleScrollView.h>
-
+#import <YYLabel.h>
 
 
 
@@ -35,6 +35,7 @@
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "NetWorkHeader.pch"
 #import "YWMacros.pch"
+#import "UIButton+ButtonTool.h"
 
 
 #endif /* GatherAppHeader_pch */

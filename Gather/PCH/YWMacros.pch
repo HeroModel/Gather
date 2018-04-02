@@ -147,6 +147,7 @@ _Pragma("clang diagnostic pop")\
 
 // 根据rgbValue获取对应的颜色
 #define RED_COLOR 0xfc5353//红色
+#define WHITE_COLOR 0xffffff  //全局白色
 #define YWColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 #define YWColorFromRGBAlpha(rgbValue, a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
@@ -162,5 +163,37 @@ _Pragma("clang diagnostic pop")\
 
 /** 随机颜色(2) */
 #define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+
+/** 苹方常规字体，40px （黑 粗体)*/
+#define REG_TITLE_FONT [UIFont fontWithName:@"PingFangSC-Semibold" size:20 * WIDTHFIT]
+/** 苹方常规字体，40px （黑） */
+#define NAM_TITLE_FONT_M [UIFont fontWithName:@"PingFangSC-Regular" size:20 * WIDTHFIT]
+/** 苹方常规字体，24px （黑） */
+#define NAME_TIT_FONT [UIFont fontWithName:@"PingFangSC-Regular" size:12 * WIDTHFIT]
+/** 苹方常规字体，26px （黑） */
+#define TIT_FONT [UIFont fontWithName:@"PingFangSC-Regular" size:13 * WIDTHFIT]
+/** 苹方常规字体，30px （黑） */
+#define NAM_TITLE_FONT [UIFont fontWithName:@"PingFangSC-Regular" size:15 * WIDTHFIT]
+/** 苹方常规字体，30px （黑,常规） */
+#define NAV_TITLE_FONT_S [UIFont fontWithName:@"PingFangSC-Regular" size:17 * WIDTHFIT]
+/** 苹方常规字体，28px （黑） */
+#define NAM_TITLE [UIFont fontWithName:@"PingFangSC-Regular" size:14 * WIDTHFIT]
+/** 苹方常规字体，32px （黑） */
+#define NAM_TITLE_B [UIFont fontWithName:@"PingFangSC-Regular" size:16 * WIDTHFIT]
+/** 苹方常规字体，36px （黑,常规） */
+#define NAV_TITLE_N [UIFont fontWithName:@"PingFangSC-Regular" size:18 * WIDTHFIT]
+/** 苹方常规字体，44px （黑，粗） */
+#define NUMBER_TITLE_FONT [UIFont fontWithName:@"PingFangSC-Semibold" size:22 * WIDTHFIT]
+/** 苹方常规字体，80px （黑） */
+#define NUMBER_TITLE_T [UIFont fontWithName:@"PingFangSC-Regular" size:40 * WIDTHFIT]
+/** 苹方常规字体，22px （黑） */
+#define TIMER_TITLE_FONT [UIFont fontWithName:@"PingFangSC-Regular" size:11 * WIDTHFIT]
+/** 苹方常规字体，60px （黑） */
+#define TIMER_TITLE_SIX [UIFont fontWithName:@"PingFangSC-Regular" size:30 * WIDTHFIT]
+/** 苹方常规字体，48px （黑，粗） */
+#define NUMBER_TITLE [UIFont fontWithName:@"PingFangSC-Semibold" size:24 * WIDTHFIT]
+
+
 
 #endif /* YWMacros_pch */
