@@ -6,6 +6,11 @@
 //  Copyright © 2018年 Apple. All rights reserved.
 
 //  前期参与编译的头文件，切记：这里只能放置轻量常用的的头文件，比较大的头文件切勿放置于此，否则会导致debug模式下 编译时间过长。
+//   对于我们使用cocoapod引入的第三方,我们可以在podfile文件中 增加一句  inhibit_all_warnings! 来要pod的工程不显示任何警告,
+
+//link_with 'SecondHouseBrokerAPP','SecondHouseBrokerCOM'
+//platform :ios,'6.0'
+//inhibit_all_warnings!
 
 #ifndef GatherAppHeader_pch
 #define GatherAppHeader_pch
@@ -36,6 +41,7 @@
 #import "NetWorkHeader.pch"
 #import "YWMacros.pch"
 #import "UIButton+ButtonTool.h"
-
+#import "MBProgressShow.h"
+#import "JMDropMenu.h"//下拉菜单(防QQ、微信右上角样式)
 
 #endif /* GatherAppHeader_pch */

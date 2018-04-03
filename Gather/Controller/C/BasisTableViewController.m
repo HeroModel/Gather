@@ -11,8 +11,13 @@
 #import "LabelAttributedStringViewController.h"
 
 @interface BasisTableViewController ()
+<JMDropMenuDelegate>
 /** <#注释#> */
 @property(nonatomic, strong) NSMutableArray * array;
+/** titleArr */
+@property (nonatomic, strong) NSMutableArray *titleArr;
+/** imgArr */
+@property (nonatomic, strong) NSMutableArray *imageArr;
 @end
 
 @implementation BasisTableViewController
@@ -23,9 +28,28 @@
     }
     return _array;
 }
+- (NSMutableArray *)titleArr
+{
+    if (!_titleArr) {
+        _titleArr = [NSMutableArray arrayWithObjects:@"创建群聊",@"加好友/群",@"扫一扫",@"付款",@"拍摄", nil];
+    }
+    return _titleArr;
+}
+- (NSMutableArray *)imageArr
+{
+    if (!_imageArr) {
+        _imageArr = [NSMutableArray arrayWithObjects:@"img1",@"img2",@"img3",@"img4",@"img5", nil];
+    }
+    return _imageArr;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nil"] style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+//    self.titleArr = @[@"创建群聊",@"加好友/群",@"扫一扫",@"付款",@"拍摄"];
+//    self.imageArr = @[@"img1",@"img2",@"img3",@"img4",@"img5"];
+    
+    //下拉菜单
+    self.navigationItem.leftBarButtonItem =  [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(navLeftClick)];
     self.navigationItem.title = @"基 础";
 }
 
@@ -75,6 +99,17 @@
     [self.navigationController pushViewController:labelString animated:YES];
 }
 
-
-
+#pragma mark - 左边
+- (void)navLeftClick {
+    
+//    JMDropMenu *dropMenu = [[JMDropMenu alloc] initWithFrame:CGRectMake(8, 64, 120, 208) ArrowOffset:14.f TitleArr:self.titleArr ImageArr:self.imageArr Type:JMDropMenuTypeQQ LayoutType:JMDropMenuLayoutTypeNormal RowHeight:40.f Delegate:self];
+//    dropMenu.titleColor = [UIColor redColor];
+//    dropMenu.lineColor = [UIColor greenColor];
+//    dropMenu.arrowColor = [UIColor blueColor];
+    
+    [JMDropMenu showDropMenuFrame:CGRectMake(8, 64, 120, 208) ArrowOffset:20.f TitleArr:self.titleArr ImageArr:self.imageArr Type:JMDropMenuTypeWeChat LayoutType:JMDropMenuLayoutTypeNormal RowHeight:40.f Delegate:self];
+}
+- (void)didSelectRowAtIndex:(NSInteger)index Title:(NSString *)title Image:(NSString *)image {
+//    NSLog(@"index----%ld,  title---%@, image---%@", (long)index, title, image);
+}
 @end

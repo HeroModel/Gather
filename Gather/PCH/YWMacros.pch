@@ -114,7 +114,10 @@ _Pragma("clang diagnostic pop")\
 
 
 /// AppDelegate
-#define YWSharedAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+//#define YWSharedAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+#define YWSharedAppDelegate [[UIApplication sharedApplication] keyWindow]
+
 
 /// ---- YYWebImage Option
 /// 手动设置image

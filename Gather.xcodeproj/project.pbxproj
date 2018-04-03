@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1819A34D207332D900A1A8A3 /* MBProgressShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819A34C207332D900A1A8A3 /* MBProgressShow.m */; };
+		1819A351207352ED00A1A8A3 /* JMDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819A350207352ED00A1A8A3 /* JMDropMenu.m */; };
 		182522F9206B38350015FD97 /* GatherBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182522F8206B38350015FD97 /* GatherBaseTableViewController.m */; };
 		182522FC206B38510015FD97 /* GatherBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182522FB206B38510015FD97 /* GatherBaseCollectionViewController.m */; };
 		182522FF206B38880015FD97 /* GatherBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182522FE206B38880015FD97 /* GatherBaseTabBarController.m */; };
@@ -51,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1819A34B207332D900A1A8A3 /* MBProgressShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressShow.h; sourceTree = "<group>"; };
+		1819A34C207332D900A1A8A3 /* MBProgressShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressShow.m; sourceTree = "<group>"; };
+		1819A34F207352ED00A1A8A3 /* JMDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMDropMenu.h; sourceTree = "<group>"; };
+		1819A350207352ED00A1A8A3 /* JMDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMDropMenu.m; sourceTree = "<group>"; };
 		182522F7206B38350015FD97 /* GatherBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseTableViewController.h; sourceTree = "<group>"; };
 		182522F8206B38350015FD97 /* GatherBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherBaseTableViewController.m; sourceTree = "<group>"; };
 		182522FA206B38510015FD97 /* GatherBaseCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseCollectionViewController.h; sourceTree = "<group>"; };
@@ -133,6 +139,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1819A34A2073329D00A1A8A3 /* MBProgress */ = {
+			isa = PBXGroup;
+			children = (
+				1819A34B207332D900A1A8A3 /* MBProgressShow.h */,
+				1819A34C207332D900A1A8A3 /* MBProgressShow.m */,
+			);
+			name = MBProgress;
+			sourceTree = "<group>";
+		};
+		1819A34E207352ED00A1A8A3 /* JMDropMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1819A34F207352ED00A1A8A3 /* JMDropMenu.h */,
+				1819A350207352ED00A1A8A3 /* JMDropMenu.m */,
+			);
+			path = JMDropMenu;
+			sourceTree = "<group>";
+		};
 		182522F5206B37590015FD97 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +309,8 @@
 		18CF82832069E78700236F08 /* GatherTools */ = {
 			isa = PBXGroup;
 			children = (
+				1819A34E207352ED00A1A8A3 /* JMDropMenu */,
+				1819A34A2073329D00A1A8A3 /* MBProgress */,
 				1836EEF82071FAA4006FB32B /* Button */,
 				18CF82842069E79900236F08 /* POP返回 */,
 			);
@@ -587,7 +613,9 @@
 				182522FC206B38510015FD97 /* GatherBaseCollectionViewController.m in Sources */,
 				18CF828E2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				182522F9206B38350015FD97 /* GatherBaseTableViewController.m in Sources */,
+				1819A34D207332D900A1A8A3 /* MBProgressShow.m in Sources */,
 				18F671BE2071DA0300DC794C /* ClassifyTableViewCell.m in Sources */,
+				1819A351207352ED00A1A8A3 /* JMDropMenu.m in Sources */,
 				18CF827E2069DC1D00236F08 /* GatherBaseView.m in Sources */,
 				1825230A206B3C010015FD97 /* BasisTableViewController.m in Sources */,
 				18252314206B3C370015FD97 /* SecondTableViewController.m in Sources */,
