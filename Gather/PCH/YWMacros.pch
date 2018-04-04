@@ -10,6 +10,11 @@
 #ifndef YWMacros_pch
 #define YWMacros_pch
 
+static NSString* const NotificationContants_Advertise_Key=@"AdvertisePush";
+
+
+
+
 /// 应用名称
 #define YW_APP_NAME    ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"])
 

@@ -10,5 +10,6 @@
 
 @interface ClassifyTableViewCell : GatherBaseTableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *rightTextLabel;
 
 @end

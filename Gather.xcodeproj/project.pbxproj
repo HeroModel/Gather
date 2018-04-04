@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1819A34D207332D900A1A8A3 /* MBProgressShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819A34C207332D900A1A8A3 /* MBProgressShow.m */; };
 		1819A351207352ED00A1A8A3 /* JMDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819A350207352ED00A1A8A3 /* JMDropMenu.m */; };
 		182522F9206B38350015FD97 /* GatherBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182522F8206B38350015FD97 /* GatherBaseTableViewController.m */; };
 		182522FC206B38510015FD97 /* GatherBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182522FB206B38510015FD97 /* GatherBaseCollectionViewController.m */; };
@@ -23,9 +22,15 @@
 		1825231A206B3C4F0015FD97 /* ThirdTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18252318206B3C4F0015FD97 /* ThirdTableViewController.xib */; };
 		1825231E206B3C6F0015FD97 /* FourthTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825231C206B3C6F0015FD97 /* FourthTableViewController.m */; };
 		1825231F206B3C6F0015FD97 /* FourthTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1825231D206B3C6F0015FD97 /* FourthTableViewController.xib */; };
+		183290072074996000919CD5 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 183290062074996000919CD5 /* UIColor+Random.m */; };
+		1832900D20749A4100919CD5 /* MBProgressHUD+HERO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832900C20749A4100919CD5 /* MBProgressHUD+HERO.m */; };
+		183290142074BCD700919CD5 /* AdvertisingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183290132074BCD700919CD5 /* AdvertisingView.m */; };
+		1832901B2074C92000919CD5 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832901A2074C92000919CD5 /* GuideViewController.m */; };
 		1836EEF72071F68A006FB32B /* LabelAttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836EEF62071F68A006FB32B /* LabelAttributedStringViewController.m */; };
 		1836EEFD2071FACA006FB32B /* UIBarButtonItem+YWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836EEF92071FACA006FB32B /* UIBarButtonItem+YWExtension.m */; };
 		1836EEFE2071FACA006FB32B /* UIButton+ButtonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836EEFC2071FACA006FB32B /* UIButton+ButtonTool.m */; };
+		188C44F6207472C30059E675 /* UIView+YwViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 188C44F5207472C30059E675 /* UIView+YwViewFrame.m */; };
+		188C44F920747C230059E675 /* POPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188C44F820747C230059E675 /* POPTableViewController.m */; };
 		1893679E2068D39A007620CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893679D2068D39A007620CF /* AppDelegate.m */; };
 		189367A42068D39A007620CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189367A22068D39A007620CF /* Main.storyboard */; };
 		189367A62068D39A007620CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189367A52068D39A007620CF /* Assets.xcassets */; };
@@ -35,6 +40,9 @@
 		18CF827E2069DC1D00236F08 /* GatherBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF827D2069DC1D00236F08 /* GatherBaseView.m */; };
 		18CF82812069DC3C00236F08 /* GatherBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF82802069DC3C00236F08 /* GatherBaseViewController.m */; };
 		18CF828E2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF828D2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		18F13B6920747D27004F6AF4 /* ShowNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F13B6720747D27004F6AF4 /* ShowNavViewController.m */; };
+		18F13B6A20747D27004F6AF4 /* ShowNavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F13B6820747D27004F6AF4 /* ShowNavViewController.xib */; };
+		18F13B6D20747E92004F6AF4 /* CustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F13B6C20747E92004F6AF4 /* CustomNavViewController.m */; };
 		18F671BA2071D9AC00DC794C /* GatherBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F671B92071D9AC00DC794C /* GatherBaseTableViewCell.m */; };
 		18F671BE2071DA0300DC794C /* ClassifyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F671BC2071DA0300DC794C /* ClassifyTableViewCell.m */; };
 		18F671BF2071DA0300DC794C /* ClassifyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F671BD2071DA0300DC794C /* ClassifyTableViewCell.xib */; };
@@ -53,8 +61,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1819A34B207332D900A1A8A3 /* MBProgressShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressShow.h; sourceTree = "<group>"; };
-		1819A34C207332D900A1A8A3 /* MBProgressShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressShow.m; sourceTree = "<group>"; };
 		1819A34F207352ED00A1A8A3 /* JMDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMDropMenu.h; sourceTree = "<group>"; };
 		1819A350207352ED00A1A8A3 /* JMDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMDropMenu.m; sourceTree = "<group>"; };
 		182522F7206B38350015FD97 /* GatherBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseTableViewController.h; sourceTree = "<group>"; };
@@ -80,12 +86,24 @@
 		1825231B206B3C6F0015FD97 /* FourthTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthTableViewController.h; sourceTree = "<group>"; };
 		1825231C206B3C6F0015FD97 /* FourthTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthTableViewController.m; sourceTree = "<group>"; };
 		1825231D206B3C6F0015FD97 /* FourthTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthTableViewController.xib; sourceTree = "<group>"; };
+		183290052074996000919CD5 /* UIColor+Random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Random.h"; sourceTree = "<group>"; };
+		183290062074996000919CD5 /* UIColor+Random.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
+		1832900B20749A4100919CD5 /* MBProgressHUD+HERO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HERO.h"; sourceTree = "<group>"; };
+		1832900C20749A4100919CD5 /* MBProgressHUD+HERO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HERO.m"; sourceTree = "<group>"; };
+		183290122074BCD700919CD5 /* AdvertisingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvertisingView.h; sourceTree = "<group>"; };
+		183290132074BCD700919CD5 /* AdvertisingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvertisingView.m; sourceTree = "<group>"; };
+		183290192074C91F00919CD5 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		1832901A2074C92000919CD5 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		1836EEF52071F68A006FB32B /* LabelAttributedStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelAttributedStringViewController.h; sourceTree = "<group>"; };
 		1836EEF62071F68A006FB32B /* LabelAttributedStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelAttributedStringViewController.m; sourceTree = "<group>"; };
 		1836EEF92071FACA006FB32B /* UIBarButtonItem+YWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+YWExtension.m"; sourceTree = "<group>"; };
 		1836EEFA2071FACA006FB32B /* UIButton+ButtonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ButtonTool.h"; sourceTree = "<group>"; };
 		1836EEFB2071FACA006FB32B /* UIBarButtonItem+YWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YWExtension.h"; sourceTree = "<group>"; };
 		1836EEFC2071FACA006FB32B /* UIButton+ButtonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ButtonTool.m"; sourceTree = "<group>"; };
+		188C44F4207472C30059E675 /* UIView+YwViewFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YwViewFrame.h"; sourceTree = "<group>"; };
+		188C44F5207472C30059E675 /* UIView+YwViewFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YwViewFrame.m"; sourceTree = "<group>"; };
+		188C44F720747C230059E675 /* POPTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POPTableViewController.h; sourceTree = "<group>"; };
+		188C44F820747C230059E675 /* POPTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POPTableViewController.m; sourceTree = "<group>"; };
 		189367992068D39A007620CF /* Gather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1893679C2068D39A007620CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1893679D2068D39A007620CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +124,11 @@
 		18CF828B2069F2AE00236F08 /* YWMacros.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWMacros.pch; sourceTree = "<group>"; };
 		18CF828C2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		18CF828D2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		18F13B6620747D27004F6AF4 /* ShowNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowNavViewController.h; sourceTree = "<group>"; };
+		18F13B6720747D27004F6AF4 /* ShowNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowNavViewController.m; sourceTree = "<group>"; };
+		18F13B6820747D27004F6AF4 /* ShowNavViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowNavViewController.xib; sourceTree = "<group>"; };
+		18F13B6B20747E92004F6AF4 /* CustomNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavViewController.h; sourceTree = "<group>"; };
+		18F13B6C20747E92004F6AF4 /* CustomNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavViewController.m; sourceTree = "<group>"; };
 		18F671B82071D9AC00DC794C /* GatherBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseTableViewCell.h; sourceTree = "<group>"; };
 		18F671B92071D9AC00DC794C /* GatherBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherBaseTableViewCell.m; sourceTree = "<group>"; };
 		18F671BB2071DA0300DC794C /* ClassifyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyTableViewCell.h; sourceTree = "<group>"; };
@@ -139,15 +162,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1819A34A2073329D00A1A8A3 /* MBProgress */ = {
-			isa = PBXGroup;
-			children = (
-				1819A34B207332D900A1A8A3 /* MBProgressShow.h */,
-				1819A34C207332D900A1A8A3 /* MBProgressShow.m */,
-			);
-			name = MBProgress;
-			sourceTree = "<group>";
-		};
 		1819A34E207352ED00A1A8A3 /* JMDropMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +208,40 @@
 				18F671C02071F5A700DC794C /* 标签（Label） */,
 			);
 			path = C;
+			sourceTree = "<group>";
+		};
+		183290032074837400919CD5 /* 返回 */ = {
+			isa = PBXGroup;
+			children = (
+				18F13B6620747D27004F6AF4 /* ShowNavViewController.h */,
+				18F13B6720747D27004F6AF4 /* ShowNavViewController.m */,
+				18F13B6820747D27004F6AF4 /* ShowNavViewController.xib */,
+				18F13B6B20747E92004F6AF4 /* CustomNavViewController.h */,
+				18F13B6C20747E92004F6AF4 /* CustomNavViewController.m */,
+			);
+			name = "返回";
+			sourceTree = "<group>";
+		};
+		183290042074991200919CD5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				188C44F4207472C30059E675 /* UIView+YwViewFrame.h */,
+				188C44F5207472C30059E675 /* UIView+YwViewFrame.m */,
+				183290052074996000919CD5 /* UIColor+Random.h */,
+				183290062074996000919CD5 /* UIColor+Random.m */,
+				1832900B20749A4100919CD5 /* MBProgressHUD+HERO.h */,
+				1832900C20749A4100919CD5 /* MBProgressHUD+HERO.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		1832900E2074BC3B00919CD5 /* AdvertisingPage */ = {
+			isa = PBXGroup;
+			children = (
+				183290122074BCD700919CD5 /* AdvertisingView.h */,
+				183290132074BCD700919CD5 /* AdvertisingView.m */,
+			);
+			path = AdvertisingPage;
 			sourceTree = "<group>";
 		};
 		1836EEF82071FAA4006FB32B /* Button */ = {
@@ -280,6 +328,9 @@
 				18CF827D2069DC1D00236F08 /* GatherBaseView.m */,
 				18F671B82071D9AC00DC794C /* GatherBaseTableViewCell.h */,
 				18F671B92071D9AC00DC794C /* GatherBaseTableViewCell.m */,
+				18F671BB2071DA0300DC794C /* ClassifyTableViewCell.h */,
+				18F671BC2071DA0300DC794C /* ClassifyTableViewCell.m */,
+				18F671BD2071DA0300DC794C /* ClassifyTableViewCell.xib */,
 			);
 			path = GatherView;
 			sourceTree = "<group>";
@@ -287,6 +338,8 @@
 		18CF82792069DB5400236F08 /* GatherController */ = {
 			isa = PBXGroup;
 			children = (
+				183290192074C91F00919CD5 /* GuideViewController.h */,
+				1832901A2074C92000919CD5 /* GuideViewController.m */,
 				18CF827F2069DC3C00236F08 /* GatherBaseViewController.h */,
 				18CF82802069DC3C00236F08 /* GatherBaseViewController.m */,
 				182522F7206B38350015FD97 /* GatherBaseTableViewController.h */,
@@ -309,8 +362,8 @@
 		18CF82832069E78700236F08 /* GatherTools */ = {
 			isa = PBXGroup;
 			children = (
+				183290042074991200919CD5 /* Category */,
 				1819A34E207352ED00A1A8A3 /* JMDropMenu */,
-				1819A34A2073329D00A1A8A3 /* MBProgress */,
 				1836EEF82071FAA4006FB32B /* Button */,
 				18CF82842069E79900236F08 /* POP返回 */,
 			);
@@ -346,9 +399,7 @@
 		18F671B72071D96800DC794C /* V */ = {
 			isa = PBXGroup;
 			children = (
-				18F671BB2071DA0300DC794C /* ClassifyTableViewCell.h */,
-				18F671BC2071DA0300DC794C /* ClassifyTableViewCell.m */,
-				18F671BD2071DA0300DC794C /* ClassifyTableViewCell.xib */,
+				1832900E2074BC3B00919CD5 /* AdvertisingPage */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -356,11 +407,14 @@
 		18F671C02071F5A700DC794C /* 标签（Label） */ = {
 			isa = PBXGroup;
 			children = (
+				183290032074837400919CD5 /* 返回 */,
 				18252307206B3C010015FD97 /* BasisTableViewController.h */,
 				18252308206B3C010015FD97 /* BasisTableViewController.m */,
 				18252309206B3C010015FD97 /* BasisTableViewController.xib */,
 				1836EEF52071F68A006FB32B /* LabelAttributedStringViewController.h */,
 				1836EEF62071F68A006FB32B /* LabelAttributedStringViewController.m */,
+				188C44F720747C230059E675 /* POPTableViewController.h */,
+				188C44F820747C230059E675 /* POPTableViewController.m */,
 			);
 			name = "标签（Label）";
 			sourceTree = "<group>";
@@ -482,6 +536,7 @@
 				1825231F206B3C6F0015FD97 /* FourthTableViewController.xib in Resources */,
 				18252310206B3C1F0015FD97 /* FristTableViewController.xib in Resources */,
 				189367A42068D39A007620CF /* Main.storyboard in Resources */,
+				18F13B6A20747D27004F6AF4 /* ShowNavViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,17 +665,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1836EEF72071F68A006FB32B /* LabelAttributedStringViewController.m in Sources */,
+				1832901B2074C92000919CD5 /* GuideViewController.m in Sources */,
 				182522FC206B38510015FD97 /* GatherBaseCollectionViewController.m in Sources */,
 				18CF828E2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				182522F9206B38350015FD97 /* GatherBaseTableViewController.m in Sources */,
-				1819A34D207332D900A1A8A3 /* MBProgressShow.m in Sources */,
+				1832900D20749A4100919CD5 /* MBProgressHUD+HERO.m in Sources */,
 				18F671BE2071DA0300DC794C /* ClassifyTableViewCell.m in Sources */,
+				18F13B6D20747E92004F6AF4 /* CustomNavViewController.m in Sources */,
+				183290142074BCD700919CD5 /* AdvertisingView.m in Sources */,
 				1819A351207352ED00A1A8A3 /* JMDropMenu.m in Sources */,
+				188C44F920747C230059E675 /* POPTableViewController.m in Sources */,
 				18CF827E2069DC1D00236F08 /* GatherBaseView.m in Sources */,
 				1825230A206B3C010015FD97 /* BasisTableViewController.m in Sources */,
 				18252314206B3C370015FD97 /* SecondTableViewController.m in Sources */,
 				1836EEFD2071FACA006FB32B /* UIBarButtonItem+YWExtension.m in Sources */,
 				18252319206B3C4F0015FD97 /* ThirdTableViewController.m in Sources */,
+				183290072074996000919CD5 /* UIColor+Random.m in Sources */,
 				1825231E206B3C6F0015FD97 /* FourthTableViewController.m in Sources */,
 				18CF82812069DC3C00236F08 /* GatherBaseViewController.m in Sources */,
 				1836EEFE2071FACA006FB32B /* UIButton+ButtonTool.m in Sources */,
@@ -630,6 +690,8 @@
 				1825230F206B3C1F0015FD97 /* FristTableViewController.m in Sources */,
 				182522FF206B38880015FD97 /* GatherBaseTabBarController.m in Sources */,
 				1893679E2068D39A007620CF /* AppDelegate.m in Sources */,
+				188C44F6207472C30059E675 /* UIView+YwViewFrame.m in Sources */,
+				18F13B6920747D27004F6AF4 /* ShowNavViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,14 +842,16 @@
 			baseConfigurationReference = F1302AC746893F1410C670EA /* Pods-Gather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W484MABT73;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Gather/PCH/GatherAppHeader.pch";
 				INFOPLIST_FILE = Gather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youhu.net.Gather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -796,14 +860,16 @@
 			baseConfigurationReference = DBD2CE4B5E37486C75DABC65 /* Pods-Gather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W484MABT73;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Gather/PCH/GatherAppHeader.pch";
 				INFOPLIST_FILE = Gather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youhu.net.Gather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

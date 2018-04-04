@@ -8,124 +8,161 @@
 
 #import "LabelAttributedStringViewController.h"
 
-
-
-
-
-#define String @"不得不说 YYKit第三方框架确实很牛，YYLabel在富文本显示和操作方面相当强大，尤其是其异步渲染，让界面要多流畅有多流畅，这里我们介绍下简单的使用"
-@interface LabelAttributedStringViewController ()<UITextViewDelegate>
+@interface LabelAttributedStringViewController ()
 
 @end
 
 @implementation LabelAttributedStringViewController
-- (BOOL)fd_prefersNavigationBarHidden
-{
-    return YES;
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self createNav];
-    [self createLabel];
+//    [self createNav];
+    self.navigationItem.title = _navTitle;
+    self.view.backgroundColor = [UIColor grayColor];
+    [self layoutLabels];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-// 创建“导航栏”
-- (void)createNav{
-    // 在主线程异步加载，使下面的方法最后执行，防止其他的控件挡住了导航栏
-//    dispatch_async(dispatch_get_main_queue(), ^{
-        // 隐藏系统导航栏
-        self.navigationController.navigationBar.hidden = YES;
-        // 创建假的导航栏
-        UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, YW_SCREEN_WIDTH, YW_APPLICATION_TOP_BAR_HEIGHT)];
-        [self.view addSubview:navView];
-        // 创建导航栏的titleLabel
-        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 0,44 * WIDTHFIT)];
-        titleLabel.text = _navTitle;
-        [titleLabel sizeToFit];
-        titleLabel.frame = CGRectMake(YW_SCREEN_WIDTH / 2 - titleLabel.frame.size.width / 2, 20, titleLabel.frame.size.width, 44);
-        [navView addSubview:titleLabel];
-        
-        UIButton * button = [UIButton ImageButtonWithType:UIButtonTypeCustom WithString:@"nav-icon-Return" target:self action:@selector(didButtonPop:)];
-        [navView addSubview:button];
-        [button makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(10 * WIDTHFIT);
-            make.top.equalTo(20 * WIDTHFIT);
-            make.size.equalTo(CGSizeMake(44 * WIDTHFIT, 44 * WIDTHFIT));
-        }];
-//    });
-}
-- (void)didButtonPop:(UIButton *)sender
+
+- (void)layoutLabels
 {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-- (void)createLabel
-{
-    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(20 * WIDTHFIT, YW_APPLICATION_TOP_BAR_HEIGHT + 20, YW_SCREEN_WIDTH - (40 * WIDTHFIT), 100 * WIDTHFIT)];
-    [self.view addSubview:view];
+    // 1, 普通的
+    YYLabel *label = [[YYLabel alloc] initWithFrame:CGRectMake(10, 0, YW_SCREEN_WIDTH - 20, 30)];
     
-     NSString *title = String;
+    label.font = [UIFont systemFontOfSize:15];
+    label.textColor = [UIColor orangeColor];
     
-//    /*
-//     *
-//     *  异步排版和渲染
-//     *
-//     */
-    YYLabel * label = [YYLabel new];
-    //如果需要获得最高的性能，你可以在后台线程用`YYTextLayout`进行预排版
-    label.displaysAsynchronously = YES; //开启异步绘制
-    label.ignoreCommonProperties = YES; //忽略除了textLayout之外的其他属性
-    [view addSubview:label];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        //创建属性字符串
-        NSMutableAttributedString * text = [[NSMutableAttributedString alloc] initWithString:title];
-        text.yy_font = NAM_TITLE_B;
-        text.yy_color = [UIColor grayColor];
-        [text yy_setColor:[UIColor redColor] range:NSMakeRange(5, 10)];
-        [text yy_setColor:[UIColor yellowColor] range:NSMakeRange(30, 5)];
-        //1.创建一个“高亮”属性，当用户点击了高亮区域的文本时，“高亮”属性会替换掉原本的属性
-        YYTextBorder * border = [YYTextBorder borderWithFillColor:[UIColor grayColor] cornerRadius:3];
-        YYTextHighlight * highlight = [YYTextHighlight new];
-        [highlight setColor:[UIColor blueColor]];
-        [highlight setBackgroundBorder:border];
-        // 2.将“高亮”属性设置到某个文本范围中
+    label.textAlignment = NSTextAlignmentLeft;
+    
+    label.numberOfLines = 0;
+    
+    label.text = @"第一个第一个第一个第一个第一个第一个第一个第一个第一个第一个第一个第一个第一个第一个第一个第一个第一个";
+    
+    [self.view addSubview:label];
+    
+    
+    // 2, 自动计算高度的
+    CGSize aSize = CGSizeMake(YW_SCREEN_WIDTH - 20, INFINITY);
+    
+    NSMutableAttributedString *attStrM0 = [[NSMutableAttributedString alloc] initWithString:@"固定宽度, 并自适应高度, 固定宽度, 并自适应高度, 固定宽度, 并自适应高度, 固定宽度, 并自适应高度, 固定宽度, 并自适应高度, 固定宽度, 并自适应高度, 固定宽度, 并自适应高度" attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:20], NSForegroundColorAttributeName : [UIColor greenColor]}];
+    
+    attStrM0.yy_lineSpacing = 10;
+    
+    YYTextLayout *layout = [YYTextLayout layoutWithContainerSize:aSize text:attStrM0];
+    
+    YYLabel *aLabel = [[YYLabel alloc] init];
+    
+    aLabel.backgroundColor = [UIColor whiteColor];
+    
+    aLabel.frame = CGRectMake(10, 30, layout.textBoundingSize.width, layout.textBoundingSize.height);
+    
+    aLabel.textLayout = layout;
+    
+    [self.view addSubview:aLabel];
+    
+    
+    
+    // 3, 高亮和点击的
+    CGSize bSize = CGSizeMake(YW_SCREEN_WIDTH - 20, INFINITY);
+    
+    NSString *bAllString = @"点击高亮点击高亮, 点击高亮点击高亮, 点击高亮点击高亮, 点击高亮点击高亮, DDDDDDD 点击高亮点击高亮";
+    
+    NSString *bHighlightedString = @"DDDDDDD";
+    
+    NSRange bRange = [bAllString rangeOfString:bHighlightedString];
+    
+    
+    NSMutableAttributedString *bAttStrM = [[NSMutableAttributedString alloc] initWithString:bAllString];
+    
+    bAttStrM.yy_lineSpacing = 4;
+    bAttStrM.yy_font = [UIFont systemFontOfSize:20];
+    bAttStrM.yy_backgroundColor = [UIColor whiteColor];
+    bAttStrM.yy_color = [UIColor blackColor];
+    
+    
+    [bAttStrM yy_setTextHighlightRange:bRange color:[UIColor redColor] backgroundColor:[UIColor yellowColor] userInfo:@{@"a" : @"b"} tapAction:^(UIView * _Nonnull containerView, NSAttributedString * _Nonnull text, NSRange range, CGRect rect) {
         
-        [text yy_setTextHighlight:highlight range:NSMakeRange(5, 10)];
-        // 3.将属性文本设置到YYLabel或YYTextView
-        // 4.接受事件回调
-        label.highlightTapAction = ^(UIView * _Nonnull containerView, NSAttributedString * _Nonnull text, NSRange range, CGRect rect) {
-            [MBProgressShow ShowMBProgress:@"1" WithTimer:1 WithView:YWSharedAppDelegate];
-        };
-        label.highlightLongPressAction = ^(UIView * _Nonnull containerView, NSAttributedString * _Nonnull text, NSRange range, CGRect rect) {
-            [MBProgressShow ShowMBProgress:@"2" WithTimer:1 WithView:YWSharedAppDelegate];
-            
-        };
+        NSLog(@"%@", containerView);
+        NSLog(@"%@", text);
+        NSLog(@"%@", NSStringFromRange(range));
+        NSLog(@"%@", NSStringFromCGRect(rect));
         
-        //高亮显示
-//        [text yy_setTextHighlightRange:NSMakeRange(30, 5) color:[UIColor yellowColor] backgroundColor:[UIColor greenColor] tapAction:^(UIView * _Nonnull containerView, NSAttributedString * _Nonnull text, NSRange range, CGRect rect) {
-//
-//        }];
-        //创建文本容器
-        YYTextContainer * container = [YYTextContainer new];
-        container.size = CGSizeMake(YW_SCREEN_WIDTH - 40, CGFLOAT_MAX);
-        container.maximumNumberOfRows = 0;
-        //生成排版结果
-        YYTextLayout * layout = [YYTextLayout layoutWithContainer:container text:text];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            label.frame = layout.textBoundingRect;
-            label.textLayout = layout;
-        });
-    });
+    } longPressAction:^(UIView * _Nonnull containerView, NSAttributedString * _Nonnull text, NSRange range, CGRect rect) {
+        
+        NSLog(@"%@", containerView);
+        NSLog(@"%@", text);
+        NSLog(@"%@", NSStringFromRange(range));
+        NSLog(@"%@", NSStringFromCGRect(rect));
+    }];
+    
+    YYTextLayout *bLayout = [YYTextLayout layoutWithContainerSize:bSize text:bAttStrM];
+    
+    YYLabel *bLabel = [[YYLabel alloc] init];
+    
+    bLabel.frame = CGRectMake(10, aLabel.hero_bottom + 10, bLayout.textBoundingSize.width, bLayout.textBoundingSize.height);
+    
+    bLabel.textLayout = bLayout;
+    
+    [self.view addSubview:bLabel];
+    
+    // 4, 带边框
+    NSMutableAttributedString *cAttStrM = [[NSMutableAttributedString alloc] initWithString:@"myProject"];
+    
+    cAttStrM.yy_lineSpacing = 4;
+    cAttStrM.yy_font = [UIFont systemFontOfSize:20];
+    cAttStrM.yy_color = [UIColor redColor];
+    cAttStrM.yy_alignment = NSTextAlignmentCenter;
+    
+    YYTextBorder *border = [YYTextBorder borderWithFillColor:nil cornerRadius:20];
+    border.insets = UIEdgeInsetsMake(-5, -10, -5, -10);
+    border.strokeColor = [UIColor whiteColor];
+    border.strokeWidth = 2;
+    
+    border.lineStyle = YYTextLineStyleSingle;
+    
+    cAttStrM.yy_textBorder = border;
+    
+    YYLabel *cLabel = [[YYLabel alloc] init];
+    cLabel.attributedText = cAttStrM;
+    
+    cLabel.frame = CGRectMake(10, bLabel.hero_bottom + 10, YW_SCREEN_WIDTH - 20, 50);
+    cLabel.backgroundColor = [UIColor blueColor];
+    
+    [self.view addSubview:cLabel];
+    
+    
+    
+    NSString *htmlString = @"<html><body>显示HTML标签<font color=\"#ffffff\"> Some显示HTML标签 </font>html string \n <font size=\"13\" color=\"red\">This is some显示HTML标签 text!</font> </body></html>";
+    
+    YYLabel *htmlLabel = [[YYLabel alloc] init];
+    htmlLabel.attributedText = [self getAttr:htmlString];
+    
+    htmlLabel.numberOfLines = 0;
+    //    htmlLabel.textColor = [UIColor yellowColor];
+    htmlLabel.frame = CGRectMake(10, cLabel.hero_bottom + 10, YW_SCREEN_WIDTH - 20, 200);
+    htmlLabel.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:htmlLabel];
 }
-#pragma mark --- YYTextViewDelegate （点击textView高亮处进行跳转）
-- (void)textView:(YYTextView *)textView didTapHighlight:(nonnull YYTextHighlight *)highlight inRange:(NSRange)characterRange rect:(CGRect)rect
+
+
+
+- (NSMutableAttributedString *)getAttr:(NSString *)htmlString
 {
-    [MBProgressShow ShowMBProgress:@"1" WithTimer:1 WithView:YWSharedAppDelegate];
+    NSMutableAttributedString *attrM = [[NSMutableAttributedString alloc] initWithData:[htmlString dataUsingEncoding:NSUnicodeStringEncoding] options:@{NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType} documentAttributes:nil error:nil];
+    
+    
+    attrM.yy_lineSpacing = 10;
+    attrM.yy_alignment = NSTextAlignmentJustified;
+    
+    attrM.yy_font = [UIFont systemFontOfSize:20];
+    
+    [attrM yy_setFont:[UIFont systemFontOfSize:25] range:NSMakeRange(2, 2)];
+    
+    attrM.yy_kern = @5;
+    
+    return attrM;
 }
-- (void)textView:(YYTextView *)textView didLongPressHighlight:(nonnull YYTextHighlight *)highlight inRange:(NSRange)characterRange rect:(CGRect)rect
-{
-    [MBProgressShow ShowMBProgress:@"2" WithTimer:1 WithView:YWSharedAppDelegate];
-}
+
 @end

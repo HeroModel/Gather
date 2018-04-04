@@ -9,6 +9,7 @@
 #import "BasisTableViewController.h"
 #import "ClassifyTableViewCell.h"
 #import "LabelAttributedStringViewController.h"
+#import "POPTableViewController.h"
 
 @interface BasisTableViewController ()
 <JMDropMenuDelegate>
@@ -24,7 +25,7 @@
 - (NSMutableArray *)array
 {
     if (!_array) {
-        _array = [NSMutableArray arrayWithObjects:@"标签", @"文本框", nil];
+        _array = [NSMutableArray arrayWithObjects:@"关于 YYTextView 使用", @"侧滑返回",nil];
     }
     return _array;
 }
@@ -91,12 +92,30 @@
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-
-   LabelAttributedStringViewController * labelString = [[LabelAttributedStringViewController alloc] init];
-    labelString.navTitle = self.array[indexPath.row];
-    [labelString setHidesBottomBarWhenPushed:YES];
-    [self.navigationController pushViewController:labelString animated:YES];
+    switch (indexPath.row) {
+        case 0:
+        {
+            LabelAttributedStringViewController * labelString = [[LabelAttributedStringViewController alloc] init];
+            labelString.navTitle = self.array[0];
+            [labelString setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:labelString animated:YES];
+            
+        }
+            break;
+        case 1:
+        {
+            POPTableViewController * labelString = [[POPTableViewController alloc] init];
+            labelString.navTitle = self.array[1];
+            [labelString setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:labelString animated:YES];
+            
+        }
+            break;
+        default:
+            break;
+    }
+    
+    
 }
 
 #pragma mark - 左边
