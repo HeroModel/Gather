@@ -11,8 +11,8 @@
 #define YWMacros_pch
 
 static NSString* const NotificationContants_Advertise_Key=@"AdvertisePush";
-
-
+//友盟appKey
+#define UmengAppKey @"5ac9bbcfb27b0a05700000b3"
 
 
 /// 应用名称
