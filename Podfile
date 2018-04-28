@@ -42,7 +42,9 @@ pod'SDCycleScrollView'
 # 类似网易新闻首页
 pod 'WMPageController'
 # 消息链
-pod 'ReactiveObjC'
+# pod 'ReactiveCocoa'                     ,'2.5'
+# 适配Xcode9.0 iOS 11
+pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
   # Pods for Gather
 
   target 'GatherUITests' do

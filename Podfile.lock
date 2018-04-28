@@ -30,7 +30,13 @@ PODS:
   - MBProgressHUD (1.1.0)
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
-  - ReactiveObjC (3.1.0)
+  - ReactiveCocoa (2.5.2):
+    - ReactiveCocoa/UI (= 2.5.2)
+  - ReactiveCocoa/Core (2.5.2):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5.2)
+  - ReactiveCocoa/UI (2.5.2):
+    - ReactiveCocoa/Core
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
   - SDWebImage (4.3.3):
@@ -62,7 +68,7 @@ DEPENDENCIES:
   - Masonry
   - MBProgressHUD
   - MLeaksFinder
-  - ReactiveObjC
+  - ReactiveCocoa (from `https://github.com/zhao0/ReactiveCocoa.git`, tag `2.5.2`)
   - SDCycleScrollView
   - SDWebImage
   - UIImage+ImageWithColor
@@ -75,6 +81,16 @@ DEPENDENCIES:
   - YYText
   - YYWebImage
 
+EXTERNAL SOURCES:
+  ReactiveCocoa:
+    :git: https://github.com/zhao0/ReactiveCocoa.git
+    :tag: 2.5.2
+
+CHECKOUT OPTIONS:
+  ReactiveCocoa:
+    :git: https://github.com/zhao0/ReactiveCocoa.git
+    :tag: 2.5.2
+
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
@@ -83,7 +99,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
-  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  ReactiveCocoa: 3ff25b1bd992ac79c5c79b26b6c0c1713b715bb2
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   UIImage+ImageWithColor: 891401f732f2f332fefe68c2332c6c955c2a879c
@@ -96,6 +112,6 @@ SPEC CHECKSUMS:
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: bade8b1d4dafa069d4c0509a2998c41bb0e62028
+PODFILE CHECKSUM: 31ea6d7e2399c9bc9bf18ac9dc3be43660ec193b
 
 COCOAPODS: 1.4.0

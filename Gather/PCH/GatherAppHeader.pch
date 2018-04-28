@@ -35,6 +35,7 @@
 #import <objc/runtime.h>
 #import <YYImage.h>
 #import <SDCycleScrollView.h>
+#import <ReactiveObjC.h>
 
 /// User Custom File
 #import "AppDelegate.h"
