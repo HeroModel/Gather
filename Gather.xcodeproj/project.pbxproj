@@ -29,6 +29,7 @@
 		1836EEF72071F68A006FB32B /* LabelAttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836EEF62071F68A006FB32B /* LabelAttributedStringViewController.m */; };
 		1836EEFD2071FACA006FB32B /* UIBarButtonItem+YWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836EEF92071FACA006FB32B /* UIBarButtonItem+YWExtension.m */; };
 		1836EEFE2071FACA006FB32B /* UIButton+ButtonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836EEFC2071FACA006FB32B /* UIButton+ButtonTool.m */; };
+		18633EE32094529600122829 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18633EE22094529600122829 /* Calculator.m */; };
 		188C44F6207472C30059E675 /* UIView+YwViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 188C44F5207472C30059E675 /* UIView+YwViewFrame.m */; };
 		188C44F920747C230059E675 /* POPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188C44F820747C230059E675 /* POPTableViewController.m */; };
 		1893679E2068D39A007620CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893679D2068D39A007620CF /* AppDelegate.m */; };
@@ -100,6 +101,8 @@
 		1836EEFA2071FACA006FB32B /* UIButton+ButtonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ButtonTool.h"; sourceTree = "<group>"; };
 		1836EEFB2071FACA006FB32B /* UIBarButtonItem+YWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YWExtension.h"; sourceTree = "<group>"; };
 		1836EEFC2071FACA006FB32B /* UIButton+ButtonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ButtonTool.m"; sourceTree = "<group>"; };
+		18633EE12094529600122829 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		18633EE22094529600122829 /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		188C44F4207472C30059E675 /* UIView+YwViewFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YwViewFrame.h"; sourceTree = "<group>"; };
 		188C44F5207472C30059E675 /* UIView+YwViewFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YwViewFrame.m"; sourceTree = "<group>"; };
 		188C44F720747C230059E675 /* POPTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POPTableViewController.h; sourceTree = "<group>"; };
@@ -175,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				182522F6206B378D0015FD97 /* TabBarController */,
+				18FDC0C9209453120059DB8E /* M */,
 				18252303206B39720015FD97 /* C */,
 				18F671B72071D96800DC794C /* V */,
 			);
@@ -278,11 +282,11 @@
 		1893679B2068D39A007620CF /* Gather */ = {
 			isa = PBXGroup;
 			children = (
-				18CF82742069DAEB00236F08 /* Main */,
 				18CF82822069E78700236F08 /* GatherThreePaty */,
 				18CF82832069E78700236F08 /* GatherTools */,
 				18CF82752069DB1500236F08 /* GatherBase */,
 				182522F5206B37590015FD97 /* Controller */,
+				18CF82742069DAEB00236F08 /* Main */,
 			);
 			path = Gather;
 			sourceTree = "<group>";
@@ -417,6 +421,15 @@
 				188C44F820747C230059E675 /* POPTableViewController.m */,
 			);
 			name = "标签（Label）";
+			sourceTree = "<group>";
+		};
+		18FDC0C9209453120059DB8E /* M */ = {
+			isa = PBXGroup;
+			children = (
+				18633EE12094529600122829 /* Calculator.h */,
+				18633EE22094529600122829 /* Calculator.m */,
+			);
+			path = M;
 			sourceTree = "<group>";
 		};
 		41590C3CF56FF3AA55814804 /* Pods */ = {
@@ -675,6 +688,7 @@
 				183290142074BCD700919CD5 /* AdvertisingView.m in Sources */,
 				1819A351207352ED00A1A8A3 /* JMDropMenu.m in Sources */,
 				188C44F920747C230059E675 /* POPTableViewController.m in Sources */,
+				18633EE32094529600122829 /* Calculator.m in Sources */,
 				18CF827E2069DC1D00236F08 /* GatherBaseView.m in Sources */,
 				1825230A206B3C010015FD97 /* BasisTableViewController.m in Sources */,
 				18252314206B3C370015FD97 /* SecondTableViewController.m in Sources */,

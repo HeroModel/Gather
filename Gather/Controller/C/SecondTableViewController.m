@@ -7,6 +7,7 @@
 //
 
 #import "SecondTableViewController.h"
+#import "Calculator.h"
 
 @interface SecondTableViewController ()
 
@@ -19,8 +20,111 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nil"] style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.title = @"第二页";
 //    14367.02   722.94
+    
+//    NSArray * array = @[@1, @2, @3, @4, @5];
+//    [array.rac_sequence.signal subscribeNext:^(id x) {
+//        NSLog(@"%@", x);
+//    }];
+    
+    // 遍历字典,遍历出来的键值对会包装成RACTuple(元组对象
+    NSDictionary *dict = @{@"name":@"张旭",@"age":@24};
+    [dict.rac_sequence.signal subscribeNext:^(RACTuple *x) {
+        
+        // RACTuple 就是一个元组，元组的概念在Swift有专门的介绍，没掌握的可以自己上网查一下！
+        NSLog(@"RACTuple = %@",x);
+        // 解包元组，会把元组的值，按顺序给参数里面的变量赋值
+        RACTupleUnpack(NSString *key,NSString *value) = x;
+        
+        //        相当于以下写法
+        //        NSString *key = x[0];
+        //        NSString *value = x[1];
+        
+        NSLog(@"%@ %@",key,value);
+        
+    }];
 }
-
+#pragma mark --- 链式函数式语法(Masonry)
+- (void)createMasonry
+{
+    // (1)
+//    Calculator * cal = [[Calculator alloc] init];
+//    cal.add(1).minus(1).multiply(1).divide(1);
+//    NSLog(@"%d", (int)cal.result);
+    
+    // (2)
+    Calculator * cal = [[Calculator alloc] init];
+    cal.add(1).and1.minus(1).with.multiply(1).and1.divide(1);
+    NSLog(@"%d", (int)cal.result);
+}
+#pragma mark --- RAC
+- (void)createRAC
+{
+    //热信号
+    RACSubject * subject = [RACSubject subject];
+    [subject sendNext:@1];
+    [[RACScheduler mainThreadScheduler] afterDelay:0.5 schedule:^{
+        [subject sendNext:@2];
+    }];
+    [[RACScheduler mainThreadScheduler] afterDelay:2 schedule:^{
+        [subject sendNext:@3];
+    }];
+    [[RACScheduler mainThreadScheduler] afterDelay:0.1 schedule:^{
+        [subject subscribeNext:^(id x) {
+            NSLog(@"subject1接收到了=====%@",x);        //0.1秒后subject1订阅了
+        }];
+    }];
+    [[RACScheduler mainThreadScheduler] afterDelay:1 schedule:^{
+        [subject subscribeNext:^(id x) {
+            NSLog(@"subject2接收到了=====%@",x);        //1秒后subject2订阅了
+        }];
+    }];
+    
+    //冷信号
+    RACSignal * signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [subscriber sendNext:@1];
+        [[RACScheduler mainThreadScheduler] afterDelay:0.5 schedule:^{
+            [subscriber sendNext:@2];
+        }];
+        [[RACScheduler mainThreadScheduler] afterDelay:2 schedule:^{
+            [subscriber sendNext:@3];
+        }];
+        return nil;
+    }];
+    [[RACScheduler mainThreadScheduler] afterDelay:0.1 schedule:^{
+        [signal subscribeNext:^(id x) {
+            NSLog(@"signal1接收到了%@", x);
+        }];
+    }];
+    [[RACScheduler mainThreadScheduler] afterDelay:1 schedule:^{
+        [signal subscribeNext:^(id x) {
+            NSLog(@"signal2接收到了%@", x);
+        }];
+    }];
+    
+    RACMulticastConnection * connection = [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [subscriber sendNext:@1];
+        [[RACScheduler mainThreadScheduler] afterDelay:0.5 schedule:^{
+            [subscriber sendNext:@2];
+        }];
+        [[RACScheduler mainThreadScheduler] afterDelay:2 schedule:^{
+            [subscriber sendNext:@3];
+        }];
+        return nil;
+    }] publish] ;
+    [connection connect];
+    RACSignal *signal1 = connection.signal;
+    [[RACScheduler mainThreadScheduler] afterDelay:0.1 schedule:^{
+        [signal1 subscribeNext:^(id x) {
+            NSLog(@"这里是热信号1，接收到了%@", x);
+        }];
+    }];
+    [[RACScheduler mainThreadScheduler] afterDelay:1 schedule:^{
+        [signal1 subscribeNext:^(id x) {
+            NSLog(@"这里是热信号2，接收到了%@", x);
+        }];
+    }];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
