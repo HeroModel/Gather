@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nil"] style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.title = @"第二页";
+//    14367.02   722.94
 }
 
 - (void)didReceiveMemoryWarning {

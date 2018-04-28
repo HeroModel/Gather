@@ -41,6 +41,8 @@ pod 'MLeaksFinder'
 pod'SDCycleScrollView'
 # 类似网易新闻首页
 pod 'WMPageController'
+# 消息链
+pod 'ReactiveObjC'
   # Pods for Gather
 
   target 'GatherUITests' do
