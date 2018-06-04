@@ -42,6 +42,7 @@ PODS:
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
+  - Toast (4.0.0)
   - UIImage+ImageWithColor (1.4.0)
   - WMPageController (2.5.2)
   - YYCache (1.0.4)
@@ -71,6 +72,7 @@ DEPENDENCIES:
   - ReactiveCocoa (from `https://github.com/zhao0/ReactiveCocoa.git`, tag `2.5.2`)
   - SDCycleScrollView
   - SDWebImage
+  - Toast
   - UIImage+ImageWithColor
   - WMPageController
   - YYCache
@@ -102,6 +104,7 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 3ff25b1bd992ac79c5c79b26b6c0c1713b715bb2
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   UIImage+ImageWithColor: 891401f732f2f332fefe68c2332c6c955c2a879c
   WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
@@ -112,6 +115,6 @@ SPEC CHECKSUMS:
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: 31ea6d7e2399c9bc9bf18ac9dc3be43660ec193b
+PODFILE CHECKSUM: d2fb753267046152a20e5a6f22130df08218b55c
 
 COCOAPODS: 1.4.0

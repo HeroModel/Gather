@@ -38,6 +38,7 @@
 		189367A92068D39A007620CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189367A72068D39A007620CF /* LaunchScreen.storyboard */; };
 		189367AC2068D39A007620CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 189367AB2068D39A007620CF /* main.m */; };
 		189367B62068D39B007620CF /* GatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 189367B52068D39B007620CF /* GatherUITests.m */; };
+		1896CBE920C5135100CF4DB2 /* UIView+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1896CBE720C5135000CF4DB2 /* UIView+Alert.m */; };
 		18CF827E2069DC1D00236F08 /* GatherBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF827D2069DC1D00236F08 /* GatherBaseView.m */; };
 		18CF82812069DC3C00236F08 /* GatherBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF82802069DC3C00236F08 /* GatherBaseViewController.m */; };
 		18CF828E2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF828D2069F42F00236F08 /* UINavigationController+FDFullscreenPopGesture.m */; };
@@ -118,6 +119,8 @@
 		189367B12068D39B007620CF /* GatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189367B52068D39B007620CF /* GatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherUITests.m; sourceTree = "<group>"; };
 		189367B72068D39B007620CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1896CBE720C5135000CF4DB2 /* UIView+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Alert.m"; sourceTree = "<group>"; };
+		1896CBE820C5135100CF4DB2 /* UIView+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Alert.h"; sourceTree = "<group>"; };
 		18CF827C2069DC1D00236F08 /* GatherBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseView.h; sourceTree = "<group>"; };
 		18CF827D2069DC1D00236F08 /* GatherBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatherBaseView.m; sourceTree = "<group>"; };
 		18CF827F2069DC3C00236F08 /* GatherBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatherBaseViewController.h; sourceTree = "<group>"; };
@@ -300,6 +303,15 @@
 			path = GatherUITests;
 			sourceTree = "<group>";
 		};
+		1896CBE620C5132600CF4DB2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1896CBE820C5135100CF4DB2 /* UIView+Alert.h */,
+				1896CBE720C5135000CF4DB2 /* UIView+Alert.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		18CF82742069DAEB00236F08 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +378,7 @@
 		18CF82832069E78700236F08 /* GatherTools */ = {
 			isa = PBXGroup;
 			children = (
+				1896CBE620C5132600CF4DB2 /* Utils */,
 				183290042074991200919CD5 /* Category */,
 				1819A34E207352ED00A1A8A3 /* JMDropMenu */,
 				1836EEF82071FAA4006FB32B /* Button */,
@@ -690,6 +703,7 @@
 				188C44F920747C230059E675 /* POPTableViewController.m in Sources */,
 				18633EE32094529600122829 /* Calculator.m in Sources */,
 				18CF827E2069DC1D00236F08 /* GatherBaseView.m in Sources */,
+				1896CBE920C5135100CF4DB2 /* UIView+Alert.m in Sources */,
 				1825230A206B3C010015FD97 /* BasisTableViewController.m in Sources */,
 				18252314206B3C370015FD97 /* SecondTableViewController.m in Sources */,
 				1836EEFD2071FACA006FB32B /* UIBarButtonItem+YWExtension.m in Sources */,

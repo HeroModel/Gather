@@ -26,6 +26,8 @@ pod 'YYWebImage'
 pod 'YYKeyboardManager'
 # HUD
 pod 'MBProgressHUD'
+# 实现提示信息的显示
+pod 'Toast'
 # AutoLayout
 pod 'Masonry'
 # 二维码，条形码

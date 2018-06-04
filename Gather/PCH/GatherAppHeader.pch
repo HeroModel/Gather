@@ -45,7 +45,8 @@
 #import "UIButton+ButtonTool.h"
 #import "JMDropMenu.h"//下拉菜单(防QQ、微信右上角样式)
 #import "UIView+YwViewFrame.h"//视图frame
-#import "MBProgressHUD+HERO.h"
+#import "MBProgressHUD+HERO.h" //HUD
+#import "UIView+Alert.h" //HUD
 
 
 
