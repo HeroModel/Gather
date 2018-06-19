@@ -54,7 +54,7 @@
         _delegate = delegate;
         //类型判断
         if (type == JMDropMenuTypeWeChat) {
-            self.RGBStrValueArr = [NSMutableArray arrayWithObjects:@(255),@(182),@(193), nil];
+            self.RGBStrValueArr = [NSMutableArray arrayWithObjects:@(255),@(255),@(255), nil];
             _titleColor = [UIColor whiteColor];
             _lineColor = [UIColor whiteColor];
         } else {
